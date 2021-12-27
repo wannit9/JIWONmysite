@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+h1.blind { /*종속 선택자*/
+    display: none;
+}
+.blind {
+    /* display: none; 존재 자체가 없음*/
+    text-indent: -9999px;
+    visibility: hidden; /* 존재하긴 함 */
+}
+a {
+    text-decoration: none;
+    color:#c89dce;
+}
+#header {
+    background-image: url("/images/background2.jpg");
+    background-position: center 35%; /*가로세로 위치*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url("../images/background.png") center no-repeat cover; */
+    min-height: 500px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    bottom: -125px;
+    margin-left: -125px;
+}
+.thumbnail img {
+    max-width: 100%; /* 반응형 사이트, 이미지 제작할 때 사용하는 크기 속성 */
+}
+
+#main .greetings {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 30px;
+    margin: 170px 0 30px;
+    color:#666;
+}
+#tmi {
+    text-align: center;
+    color: #A986AE;
+}
+#about-chapter, #contact-chapter {
+    text-align: center;
+    text-transform: uppercase; /*소문자를 대문자로*/
+    margin: 50px 0 20px;
+}
+#details {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#details li {
+    margin: 20px 0;
+    overflow: hidden;
+}
+#details strong, #details p {
+    background: #ddd;
+    display: inline-block;
+    /* margin: 20px; */
+    padding: 15px 30px;
+    box-sizing: border-box; /*padding과 border가 box값에 영향을 주지 않게 변경*/
+}
+#details strong {
+    width: calc(20% - 20px); /*계산기*/
+    float: left;
+}
+#details p {
+    width: 80%;
+    float: right;
+}
+
+#contacts {
+    display: table;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contacts li {
+    display: table-cell;
+    width: 25em; /* 3등분 한 것중 한 개, 400px / 16px */
+    text-align: center;
+}
+/* font-awesome re-styling */
+.phone {
+    font-size: 8em;
+    color: #7A7CA3;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    /* border: 2px solid #7A7CA3;
+    border-radius: 50%; */
+}
+.email {
+    font-size: 8em;
+    color: #7A7CA3;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+.insta {
+    font-size: 8em;
+    color: #7A7CA3;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+#topBtn {
+    font-size: 3em;
+    text-align: center;
+    margin: 30px 0;
+}
+#topBtn i {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+#topBtn:hover i {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#footer {
+    background:#7A7CA3;
+    color:lavender;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media all and (max-width: 425px) {
+    #header {
+        min-height: 200px;
+    }
+    .thumbnail {
+        width: 110px;
+        height: 110px;
+        bottom: -55px;
+        margin-left: -55px;
+        /*ctrl + shift + K : 한 줄 지우기*/
+    }
+    #main .greetings {
+        text-align: justify;
+        font-size: 14px;
+        margin: 55px 10px 5px;
+    }
+    #about-chapter, #contact-chapter {
+        text-align: center;
+        text-transform: uppercase; /*소문자를 대문자로*/
+        margin: 20px 10px 20px;
+    }
+
+    #details {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    #details strong {
+        display: none;
+    }
+    #details p {
+        float: none;
+        width: 100%;
+    }
+    #tmi {
+        font-size: 14px;
+    }
+
+    #contacts li {
+        display: table-row;
+    }
+}
