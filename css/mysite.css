@@ -43,6 +43,8 @@ a {
 }
 .thumbnail img {
     max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
 }
 
 #main .greetings {
@@ -58,7 +60,7 @@ a {
 }
 #about-chapter, #contact-chapter {
     text-align: center;
-    text-transform: uppercase; /*소문자를 대문자로*/
+    text-transform: uppercase;
     margin: 50px 0 20px;
 }
 #details {
@@ -71,7 +73,6 @@ a {
 }
 #details strong, #details p {
     display: inline-block;
-    /* margin: 20px; */
     padding: 15px 30px;
     box-sizing: border-box;
 }
