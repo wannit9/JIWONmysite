@@ -27,12 +27,9 @@ a {
     color:#c89dce;
 }
 #header {
-    background-image: url("/images/background2.jpg");
-    background-position: center 35%; /*가로세로 위치*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background: url("../images/background.png") center no-repeat cover; */
-    min-height: 500px;
+    /* background: url("../images/background2.png") center no-repeat cover; */
+    min-height: 150px;
+    background-color: #c89dce;
     position: relative;
 }
 
@@ -45,7 +42,7 @@ a {
     margin-left: -125px;
 }
 .thumbnail img {
-    max-width: 100%; /* 반응형 사이트, 이미지 제작할 때 사용하는 크기 속성 */
+    max-width: 100%;
 }
 
 #main .greetings {
@@ -73,21 +70,47 @@ a {
     overflow: hidden;
 }
 #details strong, #details p {
-    background: #ddd;
     display: inline-block;
     /* margin: 20px; */
     padding: 15px 30px;
-    box-sizing: border-box; /*padding과 border가 box값에 영향을 주지 않게 변경*/
+    box-sizing: border-box;
 }
 #details strong {
-    width: calc(20% - 20px); /*계산기*/
+    background: #ddc2e0;
+    width: calc(20% - 20px);
     float: left;
 }
 #details p {
+    background-color: #ddd;
     width: 80%;
     float: right;
 }
+#details2 {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+#details2 li {
+    width: 33%;
+    height: 300px;
+    margin: 0 2px;
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #333333;
+}
+#details2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+#details2 img:hover {
+    opacity: 0.8;
+}
 
+h2 {
+    clear: both;
+}
 #contacts {
     display: table;
     max-width: 1200px;
