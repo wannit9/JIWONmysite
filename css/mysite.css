@@ -100,12 +100,13 @@ a {
     column-gap: 30px;
 }
 #details2 li {
+    width: 25em;
     height: auto;
     margin: 0 2px;
     text-align: center;
 }
 #details2 img {
-    max-width: 95%;
+    max-width: 100%;
     object-fit: cover;
     transition: all 0.2s linear;
 }
@@ -118,12 +119,12 @@ a {
     display: flex;
     flex: 0 0 auto;
     margin: 0 auto;
-    column-gap: 30px;
+    column-gap: 33px;
 }
 #btn-list>li {
     flex: 0 0 auto;
     display: flex;
-    width: 30%;
+    width: 30.5%;
     margin: 0 3px;
 }
 .btn {
@@ -138,14 +139,24 @@ a {
     padding: 5px;
     margin-top: 10px;
     color: #333;
+    cursor: pointer;
 }
 .btn1 {
     background-color: #8A7AFF;
     border: 1px solid #666;
+    transition: all 0.2s linear;
+}
+.btn1:hover {
+    background-color: #484db6;
+    color: #ffffff;
 }
 .btn2 {
     background-color: #FFEAFF;
     border: 1px solid #aaa;
+    transition: all 0.2s linear;
+}
+.btn2:hover {
+    background-color: #bbb3ff;
 }
 
 h2 {
