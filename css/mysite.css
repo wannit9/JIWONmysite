@@ -49,14 +49,9 @@ a {
 
 #main .greetings {
     text-align: center;
-    line-height: 1.5;
     font-size: 30px;
-    margin: 170px 0 30px;
+    margin: 70px 0 0;
     color:#666;
-}
-#tmi {
-    text-align: center;
-    color: #A986AE;
 }
 #about-chapter, #contact-chapter, #portfolio-chapter {
     text-align: center;
@@ -109,6 +104,7 @@ a {
     max-width: 100%;
     object-fit: cover;
     transition: all 0.2s linear;
+    border-radius: 10%;
 }
 #details2 img:hover {
     opacity: 0.8;
@@ -133,7 +129,7 @@ a {
     margin: 0 auto;
     column-gap: 10px;
 }
-.btn1, .btn2 {
+.btn1, .btn2, .btn3, .btn4 {
     height: 30px;
     max-width: 150px;
     padding: 5px;
@@ -150,12 +146,12 @@ a {
     background-color: #484db6;
     color: #ffffff;
 }
-.btn2 {
+.btn2, .btn3, .btn4 {
     background-color: #FFEAFF;
     border: 1px solid #aaa;
     transition: all 0.2s linear;
 }
-.btn2:hover {
+.btn2:hover, .btn3:hover, .btn4:hover {
     background-color: #bbb3ff;
 }
 
@@ -225,6 +221,41 @@ h2 {
     color:lavender;
     padding: 10px 0;
     text-align: center;
+}
+
+#popup1, #popup2, #popup3 {
+    width: 30%;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 #666;
+    position: fixed;
+    z-index: 999;
+    top: 20%;
+    left: 35%;
+    display: none;
+}
+#popup1 img {
+    width: 100%;
+}
+#popup2 img {
+    width: 100%;
+}
+#popup3 img {
+    width: 100%;
+}
+.close {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 35px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 0 #aaa;
+    border: none;
+    transition: all 0.2s linear;
+}
+.close:active {
+    background-color: #dddddd;
 }
 
 @media all and (max-width: 425px) {
