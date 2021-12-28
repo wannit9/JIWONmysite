@@ -201,6 +201,9 @@ h2 {
     display: flex;
     flex: 0 0 auto;
 }
+.pdf-btn {
+    display: none;
+}
 
 #topBtn {
     font-size: 3em;
@@ -225,7 +228,7 @@ h2 {
 
 #popup1, #popup2, #popup3 {
     width: 30%;
-    height: 600px;
+    height: 70%;
     background-color: #ffffff;
     box-shadow: 0 0 10px 0 #666;
     position: fixed;
@@ -271,12 +274,14 @@ h2 {
     }
     #main .greetings {
         text-align: justify;
-        font-size: 14px;
         margin: 55px 10px 5px;
+    }
+    .greetings img {
+        width: 100%;
     }
     #about-chapter, #contact-chapter {
         text-align: center;
-        text-transform: uppercase; /*소문자를 대문자로*/
+        text-transform: uppercase;
         margin: 20px 10px 20px;
     }
 
@@ -291,11 +296,24 @@ h2 {
         float: none;
         width: 100%;
     }
-    #tmi {
-        font-size: 14px;
-    }
 
     #contacts li {
         display: table-row;
+    }
+    
+    .pdf {
+        display: none;
+    }
+    .pdf-btn {
+        display: block;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #000;
+        border-radius: 10%;
+        padding: 5px;
+        transition: all 0.2s linear;
+    }
+    .pdf-btn:active {
+        background-color: #dddddd;
     }
 }
