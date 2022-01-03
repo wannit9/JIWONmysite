@@ -35,7 +35,7 @@ a {
 #header {
     /* background: url("../images/bg2.jpg") center repeat-x; */
     min-height: 150px;
-    background: linear-gradient( to right, #dea1ff 50px, #bbb3ff 300px, #FFEAFF 90%, #ffffff );
+    background: linear-gradient( to right, #C966FF 10%, #bbb3ff 50%, #FFEAFF);
     position: relative;
 }
 
@@ -93,15 +93,8 @@ a {
     width: 80%;
     float: right;
 }
-#details a {
-    transition: all 0.1s linear;
-    box-sizing: border-box;
-}
-#details a:hover {
-    color:#ad39eb;
-}
 .details2-wrap {
-    background: rgb(241, 241, 241);
+    background: #fff4ff;
     padding: 1rem 0;
     margin: 0 auto;
 }
@@ -112,6 +105,12 @@ a {
     display: flex;
     flex: 0 0 auto;
     column-gap: 30px;
+}
+#details2 a {
+    transition: all 0.1s linear;
+}
+#details2 a:hover {
+    color: #C966FF;
 }
 #details2 li {
     width: 25em;
@@ -188,7 +187,7 @@ h2 {
 /* font-awesome re-styling */
 .phone {
     font-size: 8em;
-    color: #7A7CA3;
+    color: #C966FF;
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -197,7 +196,7 @@ h2 {
 }
 .email {
     font-size: 8em;
-    color: #7A7CA3;
+    color: #C966FF;
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -206,7 +205,7 @@ h2 {
 }
 .insta {
     font-size: 8em;
-    color: #7A7CA3;
+    color: #C966FF;
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -238,7 +237,7 @@ h2 {
 }
 
 #footer {
-    background:#7A7CA3;
+    background:#c58ce4;
     color:lavender;
     padding: 10px 0;
     text-align: center;
@@ -280,6 +279,53 @@ h2 {
     background-color: #dddddd;
 }
 
+/* Scroll Animation (sa, 스크롤 애니메이션) */
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+  }
+
+  /* 아래에서 위로 페이드 인 */
+  .sa-up {
+    transform: translate(0, 100px);
+  }
+  /* 위에서 아래로 페이드 인 */
+  .sa-down {
+    transform: translate(0, -100px);
+  }
+  /* 왼쪽에서 오른쪽으로 페이드 인 */
+  .sa-right {
+    transform: translate(-100px, 0);
+  }
+  /* 오른쪽에서 왼쪽으로 페이드 인 */
+  .sa-left {
+    transform: translate(100px, 0);
+  }
+  /* 왼쪽으로 회전하면서 페이드 인 */
+  .sa-rotateL {
+    transform: rotate(180deg);
+  }
+  /* 오른쪽으로 회전하면서 페이드 인 */
+  .sa-rotateR {
+    transform: rotate(-180deg);
+  }
+  /* 작아진 상태에서 커지면서 페이드 인 */
+  .sa-scaleUp {
+    transform: scale(.5);
+  }
+  /* 커진 상태에서 작아지면서 페이드 인 */
+  .sa-scaleDown {
+    transform: scale(1.5);
+  }
+
+  .sa.show {
+    opacity: 1;
+    transform: none;
+  }
+
+
+  
+/* 모바일 */
 @media all and (max-width: 425px) {
     #header {
         min-height: 200px;
