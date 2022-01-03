@@ -315,7 +315,7 @@ h2 {
     #details strong {
         /* display: none; */
         flex: none;
-        width: calc(30% - 30px);
+        width: calc(30% - 10px);
         margin: 10px 0;
     }
     #details p {
@@ -332,12 +332,12 @@ h2 {
         display: flex;
         flex: 0 0 auto;
         margin: 0 auto;
-        column-gap: 9px;
+        column-gap: 10px;
     }
     .btn1, .btn2, .btn3, .btn4 {
-        height: 33px;
-        font-size: 5px;
-        width: 65px;
+        height: 30px;
+        font-size: 6px;
+        width: 50px;
         padding: 2px;
         margin-top: 8px;
     }
