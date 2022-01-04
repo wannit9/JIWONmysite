@@ -20,6 +20,20 @@ $(function(){
         $("#popup3").fadeOut(200);
     });
 
+    $(".btn5").click(function(){
+        $("#popup4").fadeIn(200);
+    });
+    $(".close").click(function(){
+        $("#popup4").fadeOut(200);
+    });
+
+    $(".btn6").click(function(){
+        $("#popup5").fadeIn(200);
+    });
+    $(".close").click(function(){
+        $("#popup5").fadeOut(200);
+    });
+
     const saTriggerMargin = 400;
       const saElementList = document.querySelectorAll('.sa');
 
