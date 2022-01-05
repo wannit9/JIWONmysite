@@ -49,4 +49,10 @@ $(function(){
 
       window.addEventListener('load', saFunc);
       window.addEventListener('scroll', saFunc);
+
+    // $(window).resize(function() { 
+    //     if($(window).width() < 425) { 
+    //         $(".port-wrap").removeClass('sa sa-up');
+    //     };
+    // });
 });

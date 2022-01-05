@@ -358,12 +358,13 @@ h2 {
         width: 100%;
     }
     #about-chapter, #contact-chapter, #portfolio-chapter {
-        text-align: center;
-        text-transform: uppercase;
         font-size: 1.3rem;
         margin: 20px 10px 20px;
         border-bottom: 1px solid #dea1ff;
         padding-bottom: 5px;
+    }
+    #about-chapter2 {
+        font-size: 1.2rem;
     }
 
     #details {
@@ -392,7 +393,7 @@ h2 {
         margin: 0 auto;
         column-gap: 10px;
     }
-    .btn1, .btn2, .btn3, .btn4 {
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
         height: 30px;
         font-size: 6px;
         width: 50px;
