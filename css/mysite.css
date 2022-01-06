@@ -134,7 +134,7 @@ a {
 #details2 img:hover {
     opacity: 0.8;
 }
-#btn-list {
+#btn-list, #btn-list-m {
     max-width: 1000px;
     height: auto;
     display: flex;
@@ -142,7 +142,10 @@ a {
     margin: 0 auto;
     column-gap: 28px;
 }
-#btn-list>li {
+#btn-list-m {
+    display: none;
+}
+#btn-list>li, #btn-list-m>li {
     flex: 0 0 auto;
     display: flex;
     width: 31%;
@@ -386,6 +389,12 @@ h2 {
     }
 
     #btn-list {
+        display: none;
+    }
+    #btn-list-m {
+        display: block;
+    }
+    #btn-list-m {
         width: calc(100% - 10px);
         height: auto;
         display: flex;
@@ -399,6 +408,17 @@ h2 {
         width: 50px;
         padding: 2px;
         margin-top: 8px;
+    }
+    .btn1 {
+        background-color: transparent;
+        border: none;
+    }
+    .btn2, .btn3, .btn4, .btn5, .btn6 {
+        background-color: transparent;
+        border: none;
+    }
+    .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover {
+        background-color: transparent;
     }
 
     #contacts li {
@@ -422,7 +442,7 @@ h2 {
     }
     .phone {
         font-size: 5em;
-        color: #7A7CA3;
+        color: #C966FF;
         display: inline-block;
         width: 100px;
         height: 100px;
@@ -431,7 +451,7 @@ h2 {
     }
     .email {
         font-size: 5em;
-        color: #7A7CA3;
+        color: #C966FF;
         display: inline-block;
         width: 100px;
         height: 100px;
@@ -440,12 +460,34 @@ h2 {
     }
     .insta {
         font-size: 5em;
-        color: #7A7CA3;
+        color: #C966FF;
         display: inline-block;
         width: 100px;
         height: 100px;
         text-align: center;
         line-height: 100px;
+    }
+    #popup1, #popup2, #popup5 {
+        width: 80%;
+        height: 43%;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0 #666;
+        position: fixed;
+        z-index: 999;
+        top: 20%;
+        left: 10%;
+        display: none;
+    }
+    #popup3, #popup4 {
+        width: 80%;
+        height: 32%;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0 #666;
+        position: fixed;
+        z-index: 999;
+        top: 20%;
+        left: 10%;
+        display: none;
     }
 }
 
